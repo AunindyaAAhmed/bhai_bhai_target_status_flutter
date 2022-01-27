@@ -7,14 +7,14 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:percent_indicator/percent_indicator.dart';
 
-class TargetStatus extends StatefulWidget {
-  const TargetStatus({Key? key}) : super(key: key);
+class TargetStatus2 extends StatefulWidget {
+  const TargetStatus2({Key? key}) : super(key: key);
 
   @override
-  _TargetStatusState createState() => _TargetStatusState();
+  _TargetStatus2State createState() => _TargetStatus2State();
 }
 
-class _TargetStatusState extends State<TargetStatus> {
+class _TargetStatus2State extends State<TargetStatus2> {
   late DateTime date;
   List titleText = [
     'B N General Store',
@@ -94,11 +94,11 @@ class _TargetStatusState extends State<TargetStatus> {
                 Stack(children: [
                   CircleAvatar(
                     radius: 50,
-                    backgroundColor: Colors.green.withOpacity(0.2),
+                    backgroundColor: Colors.white.withOpacity(0.2),
                   ),
                   CircularPercentIndicator(
+                    startAngle: 180,
                     radius: 50.0,
-                    startAngle: 180.0,
                     lineWidth: 10.0,
                     percent: 0.8,
                     animation: true,
@@ -114,8 +114,8 @@ class _TargetStatusState extends State<TargetStatus> {
                         Text("Achievement", style: TextStyle(fontSize: 12))
                       ],
                     ),
-                    circularStrokeCap: CircularStrokeCap.butt,
-                    backgroundColor: Colors.pinkAccent,
+                    circularStrokeCap: CircularStrokeCap.round,
+                    backgroundColor: Colors.black.withOpacity(0.2),
                     progressColor: Color(0xFF81C784),
                   ),
                 ]),
